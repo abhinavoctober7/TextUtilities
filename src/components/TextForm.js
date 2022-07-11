@@ -19,9 +19,10 @@ export default function TextForm(props) {
     props.showAlert("Text has been cleared", "success");
   };
   const HandleCopy = () => {
-    var text = document.getElementById("myText");
-    text.select();
-    navigator.clipboard.writeText(text.value);
+    // var text = document.getElementById("myText");
+    // text.select();
+    // navigator.clipboard.writeText(text.value);
+    navigator.clipboard.writeText(text);
     document.getSelection().removeAllRanges();  
     props.showAlert("Text has been copied", "success");
   };
@@ -100,7 +101,7 @@ export default function TextForm(props) {
         <h1>Your Text Summary Here.</h1>
         <p>
           {
-            text.split(" ").filter(function (element) {
+            text.split(/\s+/).filter(function (element) {
               return element.length !== 0;
             }).length
           }{" "}

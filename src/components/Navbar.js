@@ -37,34 +37,34 @@ export default function Navbar(props) {
           <div
             className="bg-primary rounded button mx-2"
             onClick={()=>{props.toggle('primary')}}
-            style={{ height: "30px", width: "30px" }}>
+            style={{ height: "30px", width: "30px", cursor: "pointer" }}>
           </div>
           <div
               className="bg-secondary rounded button mx-2"
               onClick={()=>{props.toggle('secondary')}}
-              style={{ height: "30px", width: "30px" }}>
+              style={{ height: "30px", width: "30px", cursor: "pointer" }}>
           </div>
           <div
               className="bg-success rounded button mx-2"
               onClick={()=>{props.toggle('success')}}
-              style={{ height: "30px", width: "30px" }}>
+              style={{ height: "30px", width: "30px", cursor: "pointer" }}>
           </div>
           <div
               className="bg-danger rounded button mx-2"
               onClick={()=>{props.toggle('danger')}}
-              style={{ height: "30px", width: "30px" }}>
+              style={{ height: "30px", width: "30px", cursor: "pointer" }}>
           </div>
           <div
               className="bg-warning rounded button mx-2"
               onClick={()=>{props.toggle('warning')}}
-              style={{ height: "30px", width: "30px" }}>
+              style={{ height: "30px", width: "30px", cursor: "pointer" }}>
           </div>
           <div
               className="bg-info rounded button mx-2"
               onClick={()=>{props.toggle('info')}}
-              style={{ height: "30px", width: "30px" }}>
+              style={{ height: "30px", width: "30px", cursor: "pointer" }}>
           </div>
-          <div className="form-check form-switch">
+          {/* <div className="form-check form-switch">
             <input
               onClick={props.toggle}
               className="form-check-input"
@@ -77,7 +77,7 @@ export default function Navbar(props) {
             >
               Enable {props.toggleText} Mode
             </label>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
