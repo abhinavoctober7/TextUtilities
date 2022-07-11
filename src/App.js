@@ -9,8 +9,15 @@ import {
   Route,
 } from "react-router-dom";
 
+const removeBodyClass = () =>{
+  document.body.classList.remove("bg-primary", "bg-secondary", "bg-warning", "bg-info", "bg-success", "bg-danger");
+}
+
 export default function App() {
-  const toggleMode = () => {
+  const toggleMode = (cls) => {
+    removeBodyClass();
+    console.log(cls);
+    document.body.classList.add('bg-'+cls)
     if (mode === "light") {
       setMode("dark");
       setModeText("light");
